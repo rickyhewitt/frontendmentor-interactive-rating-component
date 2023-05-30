@@ -1,0 +1,123 @@
+:root {
+  --text-primary: #9197a3;
+  background-color: #141519;
+  --active-color: #fc7613;
+  --backshade-color: #262f38;
+  text-align: left;
+}
+
+.card {
+  width: 360px;
+  background: linear-gradient(
+    180deg,
+    rgba(30, 37, 47, 1) 0%,
+    rgba(23, 30, 40, 1) 100%
+  );
+  color: #feffff;
+  padding: 32px;
+  border-radius: 20px;
+  font-weight: lighter;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin-top: 20%;
+}
+
+form {
+  margin-top: 32px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.card .star img {
+  padding: 10px;
+  background-color: var(--backshade-color);
+  border-radius: 50%;
+}
+
+.card .description {
+  color: var(--text-primary);
+  font-size: 90%;
+}
+
+input[type="submit"] {
+  width: 100%;
+  border-radius: 20px;
+  color: var(--active-color);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 46px;
+  background-color: #fff;
+  border: 0px;
+  margin-top: 32px;
+  text-transform: uppercase;
+}
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+input[type="submit"]:active {
+  background-color: var(--active-color);
+  color: #fff;
+}
+
+span.rating {
+  display: inline-block;
+  width: 48px;
+  height: 32px;
+  padding-top: 14px;
+  background-color: #262f38;
+  border-radius: 32px;
+  margin-right: 22px;
+  color: var(--text-primary);
+}
+span.rating.active {
+  background-color: var(--active-color);
+  color: white;
+}
+span.rating:hover {
+  background-color: #7c8898;
+  color: #fff;
+  cursor: pointer;
+}
+span.rating:active {
+  background-color: var(--active-color);
+}
+
+.card.rating-complete {
+  text-align: center;
+}
+
+.card .image {
+  margin-top: 16px;
+  margin-bottom: 32px;
+}
+.card .body {
+}
+
+.card .body div.complete-rating {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: var(--backshade-color);
+  padding: 8px 16px;
+  border-radius: 25px;
+  color: var(--active-color);
+  margin-bottom: 12px;
+}
+.card .body span {
+  color: var(--text-primary);
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    width: auto;
+    margin: 0 16px;
+  }
+
+  span.rating {
+    width: 32px;
+    height: 26px;
+    padding-top: 8px;
+  }
+}
