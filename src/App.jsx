@@ -21,7 +21,7 @@ function App() {
     <>
       <div className={success ? "card hidden" : "card"}>
         <div className="star">
-          <img src="./images/icon-star.svg" alt="Star" />
+          <img src="./public/images/icon-star.svg" alt="Star" />
         </div>
 
         <h2>How did we do?</h2>
@@ -76,7 +76,10 @@ function App() {
         }
       >
         <div className="image">
-          <img src="./images/illustration-thank-you.svg" alt="Thank you" />
+          <img
+            src="./public/images/illustration-thank-you.svg"
+            alt="Thank you"
+          />
         </div>
 
         <div className="body">
